@@ -36,7 +36,7 @@ namespace DapperAPI.Data.Services
                 return book;
             }
         }
-
+        
         public async Task<BookDTO> CreateBookAsync(BookDTO bookDTO)
         {
             var query = @"INSERT INTO Books (Title, Price) VALUES (@Title, @Price)
